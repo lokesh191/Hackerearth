@@ -1,0 +1,10 @@
+t=int(input())
+for _ in range(t):
+  arr=[]
+  b=int(input())
+  for i in range(b):
+      g=input()
+      arr.append(g)
+  k=list(set(arr))
+  for ele in k:
+    print(ele)
