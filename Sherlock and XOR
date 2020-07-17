@@ -1,0 +1,14 @@
+t=int(input())
+for _ in range(t):
+   n=int(input())
+   arr=list(map(int,input().split()))
+   brr=0
+   for i in range(0, n) : 
+         for j in range(i + 1, n) : 
+              k=arr[i]^arr[j] 
+              if(k%2!=0):
+               brr+=1
+   print(brr)
+
+       
+              
