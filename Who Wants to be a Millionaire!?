@@ -1,0 +1,5 @@
+t=int(input())
+for _ in range(t):
+    n=int(input())
+    k=(n-1)/(n)
+    print("{:.6f}".format(k))
