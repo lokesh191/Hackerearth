@@ -1,0 +1,12 @@
+import math
+t=int(input())
+for _ in range(t):
+    a=int(input())
+    if(a%2==0):
+        c=a
+    else:
+        c=a-1
+    p=c/2
+    h=math.floor(p/2)
+    s=math.ceil(p/2)
+    print(h*s)
