@@ -1,0 +1,15 @@
+n=int(input())
+arr=list(map(int,input().split()))
+cntEven = 0; cntOdd = 0;  
+for i in range(n) :  
+          if (arr[i] % 2 == 0) : 
+            cntEven += 1;  
+          else : 
+            cntOdd += 1;  
+evenPairs = 0;    
+evenPairs += ((cntEven * (cntEven - 1)) // 2);  
+evenPairs += ((cntOdd * (cntOdd - 1)) // 2);   
+oddPairs = 0;   
+oddPairs += (cntEven * cntOdd);  
+print(abs(oddPairs-evenPairs));  
+  
