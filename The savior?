@@ -1,0 +1,24 @@
+t=int(input())
+for _ in range(t):
+    n=int(input())
+    arr=list(map(int,input().split()))
+    prr=[]
+    krr=[]
+    for ele in arr:
+        if(ele%2==0):
+            prr.append(ele)
+        else:
+            krr.append(ele)
+    drr=[]
+    for i in range(len(prr)): 
+        for j in range(i+1,len(prr)): 
+            drr.append(i)
+            drr.append(j)
+    trr=[]
+    for s in range(len(krr)): 
+        for q in range(s+1,len(krr)): 
+            trr.append(s)
+            trr.append(q)
+    print(int((len(trr)+len(drr))/2))
+  
+  
