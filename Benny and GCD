@@ -1,0 +1,8 @@
+import math
+l,r,g=map(int,input().split())
+k=0
+for x in range(l,r+1):
+    for y in range(l,r+1):
+        if((math.gcd(x,y))==g):
+            k+=1
+print(k)
