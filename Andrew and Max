@@ -1,0 +1,8 @@
+t=int(input())
+for _ in range(t):
+    x,y,z=map(int,input().split())
+    a=(x-y+z)/(2)
+    b=(x+y-z)/(2)
+    c=(z-x+y)/(2)
+    h=a*(b+c)+b*(a+c)+c*(a+b)
+    print("{:.2f}".format(h))
