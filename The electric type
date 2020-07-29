@@ -1,0 +1,9 @@
+n=int(input())
+arr=list(map(int,input().split()))
+crr=set()
+for i in range(len(arr)):
+    for j in range(len(arr)):
+        if(i<j):
+         crr.add((arr[i],arr[j]))
+print(len(crr))
+        
