@@ -1,0 +1,15 @@
+n=int(input())
+arr=list(map(int,input().split()))
+t=int(input())
+for _ in range(t):
+    s=0
+    flag=0
+    b=int(input())
+    for i in range(n):
+        s+=arr[i]
+        if(s>=b):
+            flag=1
+            print(i+1)
+            break
+    if(flag==0):
+        print("-1")
