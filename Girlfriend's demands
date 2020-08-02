@@ -1,0 +1,9 @@
+a=input()
+h=len(a)
+n=int(input())
+for _ in range(n):
+    b,c=map(int,input().split())
+    if(a[(b-1)%h]!=a[(c-1)%h]):
+        print("No")
+    else:
+        print("Yes")
