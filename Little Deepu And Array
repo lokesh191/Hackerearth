@@ -1,0 +1,10 @@
+n=int(input())
+arr=list(map(int,input().split()))
+arr.sort(reverse=True)
+t=int(input())
+for _ in range(t):
+    k=int(input())
+    for i in range(n):
+        if(arr[i]>k):
+            arr[i]=arr[i]-1
+print(*arr)
