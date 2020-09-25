@@ -1,0 +1,6 @@
+t=int(input())
+for _ in range(t):
+    a=int(input())
+    n=((a)%(1000000007))
+    ans=n*(2*n-1)
+    print((ans)%(1000000007))
