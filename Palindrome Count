@@ -1,0 +1,9 @@
+test_str=input()
+res = [test_str[i: j] for i in range(len(test_str)) 
+          for j in range(i + 1, len(test_str) + 1)] 
+k=0
+for a in res:
+    if(a==a[::-1]):
+        k+=1
+print(k)
+    
